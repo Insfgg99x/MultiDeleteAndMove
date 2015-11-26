@@ -99,6 +99,8 @@
         
         //执行删除
         [_dataArray removeObjectsInArray:_delArray];
+        //清空删除数组
+        [_delArray removeAllObjects];
         //刷新表视图
         [_tbView reloadData];
     }
